@@ -4556,7 +4556,7 @@ section,
 
 .product-page .page-title h1 {
   max-width: 760px;
-  margin: 0 0 16px;
+  margin: 0 auto 16px;
   font-family: var(--display-font);
   font-size: clamp(30px, 4vw, 46px);
   font-weight: 700;
@@ -4566,7 +4566,7 @@ section,
 
 .product-page .page-title p {
   max-width: 640px;
-  margin: 0;
+  margin: auto;
   color: rgba(255, 255, 255, 0.78);
   font-size: 17px;
 }
