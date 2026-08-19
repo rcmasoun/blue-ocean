@@ -32,24 +32,25 @@
 </head>
 
 <body class="product-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
+<header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
+
         <img src="assets/img/BOS_Logo.jpg" alt="">
+
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">Our Story</a></li>
-          <li><a href="product.html">Products</a></li>
-          <li class="dropdown"><a href="services.html" class="active"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="about.html" >Our Story</a></li>
+		   <li><a href="product.html">Products</a></li>
+         <li class="dropdown" class="active" ><a href="services.html"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li class="dropdown"><a href="#"><span>Hot Rolled &amp; Forged Longs</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="round-black-bars.html" class="active">Round Black Bars</a></li>
+                  <li><a href="round-black-bars.html">Round Black Bars</a></li>
                   <li><a href="#">RCS (Round Cornered Squares)</a></li>
                   <li><a href="#">Hex Bars</a></li>
                   <li><a href="#">Flats</a></li>
@@ -83,7 +84,8 @@
               <li><a href="#">Graded Scrap</a></li>
             </ul>
           </li>
-          <li><a href="portfolio.html">Resources</a></li>
+		  <li><a href="portfolio.html">Resources</a></li>
+        
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -93,13 +95,14 @@
     </div>
   </header>
 
+
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background">
+    <div class="page-title dark-background" style="background-image: linear-gradient(135deg, rgba(6,38,61,0.75) 0%, rgba(1,63,115,0.7) 55%, rgba(2,91,165,0.72) 120%), url('assets/img/services/bright-bar.jpg');">
       <div class="container position-relative">
         <span class="title-eyebrow">Hot Rolled &amp; Forged Longs</span>
-        <h1>Round Black Bars</h1>
+        <h1 class="text-center">Round Black Bars</h1>
         <p>Prime round black steel bars for precision manufacturing</p>
         <nav class="breadcrumbs">
           <ol>
@@ -115,8 +118,14 @@
     <!-- Intro Section -->
     <section id="product-intro" class="product-intro section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="50">
+            <div class="product-intro-visual">
+              <img src="assets/img/services/bright-bar.jpg" alt="Round black steel bars bundled and tagged for dispatch at Blue Ocean Steels">
+             
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <p>Round black bars are solid, circular steel bars used as a fundamental raw material in precision manufacturing and heavy drop forging. They are produced by rolling or forging heated steel into uniform round sections, giving them the perfect balance of strength, ductility, machinability, and cost efficiency for further processing.</p>
             <p>At Blue Ocean Steels (BOS), we supply only prime-quality material sourced to match your exact grade, size, chemistry, and supply condition. We connect tier-1 mill capabilities with your production needs, ensuring dependable steel supply for critical downstream applications across the automotive, defense, aerospace, and heavy engineering sectors.</p>
           </div>
@@ -207,22 +216,19 @@
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <!--
-          Placeholder mill-partner badges — swap each badge's text
-          for the partner's real logo image once assets are ready.
-        -->
+       
         <div class="swiper mill-partners-swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><div class="mill-partner-badge">Jayswal Neco Industries</div></div>
-            <div class="swiper-slide"><div class="mill-partner-badge">JSW Steel</div></div>
-            <div class="swiper-slide"><div class="mill-partner-badge">Jindal Steel &amp; Power Ltd (JSPL)</div></div>
-            <div class="swiper-slide"><div class="mill-partner-badge">Tata Steel</div></div>
-            <div class="swiper-slide"><div class="mill-partner-badge">Kirloskar</div></div>
-            <div class="swiper-slide"><div class="mill-partner-badge">Arjas Steel</div></div>
-            <div class="swiper-slide"><div class="mill-partner-badge">Aarti Steel</div></div>
-            <div class="swiper-slide"><div class="mill-partner-badge">Aarti Steel International</div></div>
-            <div class="swiper-slide"><div class="mill-partner-badge">Sanyo Special Steels</div></div>
-            <div class="swiper-slide"><div class="mill-partner-badge">R.L. Steel</div></div>
+            <div class="swiper-slide"><div class="mill-partner-badge"><img class="mill-partner-logo" src="assets/img/mill-partners/jayswal-neco-industries.png" alt="Jayswal Neco Industries logo"></div></div>
+            <div class="swiper-slide"><div class="mill-partner-badge"><img class="mill-partner-logo" src="assets/img/mill-partners/jsw-steel.png" alt="JSW Steel logo"></div></div>
+            <div class="swiper-slide"><div class="mill-partner-badge"><img class="mill-partner-logo" src="assets/img/mill-partners/jindal-steel-power.png" alt="Jindal Steel &amp; Power Ltd (JSPL) logo"></div></div>
+            <div class="swiper-slide"><div class="mill-partner-badge"><img class="mill-partner-logo" src="assets/img/mill-partners/tata-steel.png" alt="Tata Steel logo"></div></div>
+            <div class="swiper-slide"><div class="mill-partner-badge"><img class="mill-partner-logo" src="assets/img/mill-partners/kirloskar.png" alt="Kirloskar logo"></div></div>
+            <div class="swiper-slide"><div class="mill-partner-badge"><img class="mill-partner-logo" src="assets/img/mill-partners/arjas-steel.png" alt="Arjas Steel logo"></div></div>
+            <div class="swiper-slide"><div class="mill-partner-badge"><img class="mill-partner-logo" src="assets/img/mill-partners/aarti-steel.png" alt="Aarti Steel logo"></div></div>
+            <div class="swiper-slide"><div class="mill-partner-badge"><img class="mill-partner-logo" src="assets/img/mill-partners/aarti-steel-international.png" alt="Aarti Steel International logo"></div></div>
+            <div class="swiper-slide"><div class="mill-partner-badge"><img class="mill-partner-logo" src="assets/img/mill-partners/sanyo-special-steels.png" alt="Sanyo Special Steels logo"></div></div>
+            <div class="swiper-slide"><div class="mill-partner-badge"><img class="mill-partner-logo" src="assets/img/mill-partners/rl-steel.png" alt="R.L. Steel logo"></div></div>
           </div>
         </div>
       </div>
@@ -234,21 +240,25 @@
 
       <div class="container section-title" data-aos="fade-up">
         <h2>Industrial Uses &amp; Applications</h2>
-        <p>Where round black bars go to work across heavy engineering</p>
-      </div>
+        </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="use-case-grid">
-          <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-hammer"></i></span><span>Closed-die forging blanks and hot die pressing</span></div>
-          <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-car-front"></i></span><span>Automotive crankshafts, camshafts, and axles</span></div>
-          <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-gear-wide-connected"></i></span><span>Heavy-duty connecting rods and pistons</span></div>
-          <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-cpu"></i></span><span>High-speed CNC machined drivetrain components</span></div>
-          <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-disc"></i></span><span>Wheel hubs, steering linkages, and suspension parts</span></div>
-          <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-nut"></i></span><span>High-strength industrial fasteners and threaded rods</span></div>
-          <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-droplet-half"></i></span><span>High-pressure hydraulic cylinders and fluid systems</span></div>
-          <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-arrow-repeat"></i></span><span>Heavy drive shafts and transmission pinions</span></div>
-          <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-gear"></i></span><span>Precision gear blanks and sprockets</span></div>
-          <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-truck"></i></span><span>Earth-moving machinery and defense tracked vehicle parts</span></div>
+        <div class="row g-4 align-items-center">
+          
+          <div class="col-lg-12">
+            <div class="use-case-grid compact">
+              <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-hammer"></i></span><span>Closed-die forging blanks and hot die pressing</span></div>
+              <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-car-front"></i></span><span>Automotive crankshafts, camshafts, and axles</span></div>
+              <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-gear-wide-connected"></i></span><span>Heavy-duty connecting rods and pistons</span></div>
+              <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-cpu"></i></span><span>High-speed CNC machined drivetrain components</span></div>
+              <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-disc"></i></span><span>Wheel hubs, steering linkages, and suspension parts</span></div>
+              <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-nut"></i></span><span>High-strength industrial fasteners and threaded rods</span></div>
+              <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-droplet-half"></i></span><span>High-pressure hydraulic cylinders and fluid systems</span></div>
+              <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-arrow-repeat"></i></span><span>Heavy drive shafts and transmission pinions</span></div>
+              <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-gear"></i></span><span>Precision gear blanks and sprockets</span></div>
+              <div class="use-case-item"><span class="use-case-icon"><i class="bi bi-truck"></i></span><span>Earth-moving machinery and defense tracked vehicle parts</span></div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -263,6 +273,10 @@
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="process-visual">
+          <img src="assets/img/quality.jpg" alt="Glowing hot steel ingot being handled during forging at a Blue Ocean Steels mill partner">
+          <span class="process-visual-caption">From melt to finished bar — every heat tracked and tested</span>
+        </div>
         <div class="process-steps">
           <div class="process-step">
             <span class="process-number">1</span>
@@ -290,22 +304,31 @@
 
       <div class="container section-title" data-aos="fade-up">
         <h2>BOS Supply &amp; Quality Advantage</h2>
-        <p>What sets Blue Ocean Steels apart on every round black bar order</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <ul class="advantage-list">
-          <li><i class="bi bi-check-circle-fill"></i> Prime-quality hot-rolled and forged round black bars</li>
-          <li><i class="bi bi-check-circle-fill"></i> Wide range of specialty grades (alloy, carbon, defense, and high-tensile steels)</li>
-          <li><i class="bi bi-check-circle-fill"></i> Standard diameters in ready stock</li>
-          <li><i class="bi bi-check-circle-fill"></i> JIT (Just In Time) supply across India for OEM production lines</li>
-          <li><i class="bi bi-check-circle-fill"></i> Strict Technical Delivery Conditions (TDC)-based grade compliance</li>
-          <li><i class="bi bi-check-circle-fill"></i> Custom chemistries and specific cut lengths</li>
-          <li><i class="bi bi-check-circle-fill"></i> Make-to-Order (MTO) and import support for rare international specs</li>
-          <li><i class="bi bi-check-circle-fill"></i> Heavy forged diameter sourcing for massive engineering projects</li>
-          <li><i class="bi bi-check-circle-fill"></i> Precise heat-treated condition supply (H&amp;T, Annealed, Normalized)</li>
-          <li><i class="bi bi-check-circle-fill"></i> Reliable prime-mill-backed procurement with full metallurgical traceability</li>
-        </ul>
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-7">
+            <ul class="advantage-list single">
+              <li><i class="bi bi-check-circle-fill"></i> Prime-quality hot-rolled and forged round black bars</li>
+              <li><i class="bi bi-check-circle-fill"></i> Wide range of specialty grades (alloy, carbon, defense, and high-tensile steels)</li>
+              <li><i class="bi bi-check-circle-fill"></i> Standard diameters in ready stock</li>
+              <li><i class="bi bi-check-circle-fill"></i> JIT (Just In Time) supply across India for OEM production lines</li>
+              <li><i class="bi bi-check-circle-fill"></i> Strict Technical Delivery Conditions (TDC)-based grade compliance</li>
+              <li><i class="bi bi-check-circle-fill"></i> Custom chemistries and specific cut lengths</li>
+              <li><i class="bi bi-check-circle-fill"></i> Make-to-Order (MTO) and import support for rare international specs</li>
+              <li><i class="bi bi-check-circle-fill"></i> Heavy forged diameter sourcing for massive engineering projects</li>
+              <li><i class="bi bi-check-circle-fill"></i> Precise heat-treated condition supply (H&amp;T, Annealed, Normalized)</li>
+              <li><i class="bi bi-check-circle-fill"></i> Reliable prime-mill-backed procurement with full metallurgical traceability</li>
+            </ul>
+          </div>
+          <div class="col-lg-5">
+            <div class="advantage-visual">
+              <img src="assets/img/services/machined-components.jpg" alt="Bright bar stock bundled and ready for dispatch at Blue Ocean Steels">
+              <div class="advantage-visual-note"><strong>600+</strong><span>Customers trust BOS sourcing</span></div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </section><!-- /BOS Supply & Quality Advantage -->
@@ -321,60 +344,152 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="explore-shapes-grid">
 
-          <div class="explore-shapes-group">
-            <h4>Hot Rolled &amp; Forged Longs</h4>
-            <ul>
-              <li><a href="round-black-bars.html" class="current">Round Black Bars</a></li>
-              <li><a href="#">RCS (Round Cornered Squares)</a></li>
-              <li><a href="#">Hex Bars</a></li>
-              <li><a href="#">Flats</a></li>
-            </ul>
+          <div class="explore-shapes-card" data-aos="fade-up" data-aos-delay="50">
+            <div class="explore-shapes-thumb"><img src="assets/img/services/round-bar.jpg" alt="Hot rolled and forged long steel products"></div>
+            <div class="explore-shapes-group">
+              <h4>Hot Rolled &amp; Forged Longs</h4>
+              <ul>
+                <li><a href="round-black-bars.html" class="current">Round Black Bars</a></li>
+                <li><a href="#">RCS (Round Cornered Squares)</a></li>
+                <li><a href="#">Hex Bars</a></li>
+                <li><a href="#">Flats</a></li>
+              </ul>
+            </div>
           </div>
 
-          <div class="explore-shapes-group">
-            <h4>Cast Steel</h4>
-            <ul>
-              <li><a href="#">Billets</a></li>
-              <li><a href="#">Blooms</a></li>
-              <li><a href="#">Slabs</a></li>
-            </ul>
+          <div class="explore-shapes-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="explore-shapes-thumb"><img src="assets/img/services/billets.jpg" alt="As-cast steel billets and blooms"></div>
+            <div class="explore-shapes-group">
+              <h4>Cast Steel</h4>
+              <ul>
+                <li><a href="#">Billets</a></li>
+                <li><a href="#">Blooms</a></li>
+                <li><a href="#">Slabs</a></li>
+              </ul>
+            </div>
           </div>
 
-          <div class="explore-shapes-group">
-            <h4>Cold Drawn &amp; Bright Steels</h4>
-            <ul>
-              <li><a href="#">Drawn Bright Bar</a></li>
-              <li><a href="#">Peeled &amp; Ground Bar</a></li>
-            </ul>
+          <div class="explore-shapes-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="explore-shapes-thumb"><img src="assets/img/services/bright-bar.jpg" alt="Cold drawn bright steel bars"></div>
+            <div class="explore-shapes-group">
+              <h4>Cold Drawn &amp; Bright Steels</h4>
+              <ul>
+                <li><a href="#">Drawn Bright Bar</a></li>
+                <li><a href="#">Peeled &amp; Ground Bar</a></li>
+              </ul>
+            </div>
           </div>
 
-          <div class="explore-shapes-group">
-            <h4>Wire Rods</h4>
-            <ul>
-              <li><a href="#">Round</a></li>
-              <li><a href="#">Hex</a></li>
-            </ul>
+          <div class="explore-shapes-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="explore-shapes-thumb"><img src="assets/img/services/wire-rod-2.jpg" alt="Coiled steel wire rod"></div>
+            <div class="explore-shapes-group">
+              <h4>Wire Rods</h4>
+              <ul>
+                <li><a href="#">Round</a></li>
+                <li><a href="#">Hex</a></li>
+              </ul>
+            </div>
           </div>
 
-          <div class="explore-shapes-group">
-            <h4>Tool &amp; Die Steels</h4>
-            <ul>
-              <li><a href="#">Die Blocks</a></li>
-              <li><a href="#">Heavy Rounds</a></li>
-            </ul>
+          <div class="explore-shapes-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="explore-shapes-thumb"><img src="assets/img/services/round-bar-2.jpg" alt="Heavy round steel bar close-up"></div>
+            <div class="explore-shapes-group">
+              <h4>Tool &amp; Die Steels</h4>
+              <ul>
+                <li><a href="#">Die Blocks</a></li>
+                <li><a href="#">Heavy Rounds</a></li>
+              </ul>
+            </div>
           </div>
 
-          <div class="explore-shapes-group">
-            <h4>Graded Scrap</h4>
-            <ul>
-              <li><a href="#">Nickel and Moly Graded Scrap</a></li>
-            </ul>
+          <div class="explore-shapes-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="explore-shapes-thumb"><img src="assets/img/services/scrap.jpg" alt="Graded steel scrap"></div>
+            <div class="explore-shapes-group">
+              <h4>Graded Scrap</h4>
+              <ul>
+                <li><a href="#">Nickel and Moly Graded Scrap</a></li>
+              </ul>
+            </div>
           </div>
 
         </div>
       </div>
 
     </section><!-- /Explore Other Shapes & Products -->
+
+    <!-- Our Other Services 
+    <section id="other-services" class="why-bos section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Other Services</h2>
+        <p>More ways Blue Ocean Steels supports your steel supply chain</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="why-bos-panel">
+          <div class="row g-0 align-items-stretch">
+            <div class="col-lg-4">
+              <div class="why-bos-intro" style="background-image: url('assets/img/products/machined-components.jpg');">
+                <p class="why-bos-eyebrow">Beyond Round Black Bars</p>
+                <h3>One partner for every step of your steel supply chain.</h3>
+                <a href="services.html" class="why-bos-link">Explore all services <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="why-bos-list">
+                <a class="why-bos-row" href="services.html">
+                  <span class="why-bos-index">01</span>
+                  <i class="bi bi-shield-check"></i>
+                  <div class="why-bos-row-text">
+                    <h4>Custom TDC Compliance</h4>
+                    <p>Material sourced and certified against your exact technical delivery conditions.</p>
+                  </div>
+                </a>
+                <a class="why-bos-row" href="services.html">
+                  <span class="why-bos-index">02</span>
+                  <i class="bi bi-award"></i>
+                  <div class="why-bos-row-text">
+                    <h4>100% Traceability &amp; Certification</h4>
+                    <p>Full mill test certificates and heat-level traceability on every order.</p>
+                  </div>
+                </a>
+                <a class="why-bos-row" href="services.html">
+                  <span class="why-bos-index">03</span>
+                  <i class="bi bi-diagram-3"></i>
+                  <div class="why-bos-row-text">
+                    <h4>Pan-India Supplier Network</h4>
+                    <p>Tier-1 mill relationships and warehousing across major industrial hubs.</p>
+                  </div>
+                </a>
+                <a class="why-bos-row" href="services.html">
+                  <span class="why-bos-index">04</span>
+                  <i class="bi bi-truck"></i>
+                  <div class="why-bos-row-text">
+                    <h4>JIT Dispatch</h4>
+                    <p>Just-in-time delivery scheduling that fits your production line, not our stock.</p>
+                  </div>
+                </a>
+                <a class="why-bos-row" href="services.html">
+                  <span class="why-bos-index">05</span>
+                  <i class="bi bi-scissors"></i>
+                  <div class="why-bos-row-text">
+                    <h4>Custom Cut-to-Size</h4>
+                    <p>Bandsaw cutting to your exact length across all diameters, no minimums.</p>
+                  </div>
+                </a>
+                <a class="why-bos-row" href="services.html">
+                  <span class="why-bos-index">06</span>
+                  <i class="bi bi-box-seam"></i>
+                  <div class="why-bos-row-text">
+                    <h4>Warehousing &amp; Inventory</h4>
+                    <p>Managed stock across our warehouses so material is ready when you need it.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Our Other Services -->
 
     <!-- Final CTA -->
     <section id="final-cta" class="final-cta section light-background">
