@@ -123,7 +123,7 @@
         <div class="row gy-4">
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
             <div class="about-visual">
-              <img src="assets/img/about.jpg" class="img-fluid" alt="Blue Ocean Steels — special steel supply chain">
+              <img src="assets/img/Office/office-3.JPG" class="img-fluid" alt="Blue Ocean Steels — special steel supply chain">
               <div class="about-visual-note">
                 <strong>Dec 2018</strong>
                 <span>Founded in India</span>
@@ -238,16 +238,16 @@
         <div class="vm-diagonal" data-aos="fade-up" data-aos-delay="100">
 
           <div class="vm-block vm-block-vision">
-            <span class="vm-num">01</span>
-            <h3 class="vm-heading">Our<br>Vision</h3>
-            <p>To build a system-driven, globally trusted special steel supply chain organisation.</p>
             <div class="vm-icon-badge vm-icon-badge-vision"><i class="bi bi-binoculars-fill"></i></div>
+            <h3 class="vm-heading">Our <span>Vision</span></h3>
+            <span class="vm-divider"></span>
+            <p>To build a system-driven, globally trusted special steel supply chain organisation.</p>
           </div>
 
           <div class="vm-block vm-block-mission">
-            <div class="vm-icon-badge vm-icon-badge-mission"><i class="bi bi-compass-fill"></i></div>
-            <span class="vm-num">02</span>
-            <h3 class="vm-heading">Our<br>Mission</h3>
+            <div class="vm-icon-badge vm-icon-badge-mission"><i class="bi bi-bullseye"></i></div>
+            <h3 class="vm-heading">Our <span>Mission</span></h3>
+            <span class="vm-divider"></span>
             <p>To be the face of our associates across the globe where our customers can find and buy reliably anything in specialty steels with utmost transparency, ethics and compliance.</p>
           </div>
 
@@ -515,39 +515,34 @@
     <section id="company-profile" class="download-profile section">
 
       <div class="container">
-        <div class="row gy-4 align-items-stretch">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="contact-panel h-100 d-flex flex-column justify-content-center">
-              <div class="contact-intro">
-                <h2>Download the Company Profile</h2>
-              </div>
-            </div>
+        <div class="cp-overlap" data-aos="fade-up">
+          <div class="cp-visual" style="background-image: url('assets/img/Office/download.jpg');">
+            <div class="cp-visual-overlay"></div>
+            <div class="cp-visual-text"><span>COMPANY</span><span>PROFILE</span></div>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <form action="forms/company-profile.php" method="post" class="contact-form php-email-form">
-              <div class="row gy-3">
-                <div class="col-12">
-                  <label for="cp-name">Full Name</label>
-                  <input type="text" id="cp-name" name="name" required>
-                </div>
-                <div class="col-12">
-                  <label for="cp-email">Work Email</label>
-                  <input type="email" id="cp-email" name="email" required>
-                </div>
-                <div class="col-12">
-                  <label for="cp-company">Company Name</label>
-                  <input type="text" id="cp-company" name="company" required>
-                </div>
-                <div class="col-12">
-                  <label for="cp-phone">Phone Number</label>
-                  <input type="tel" id="cp-phone" name="phone">
-                </div>
-                <div class="col-12">
-                  <button type="submit">Download PDF <i class="bi bi-download"></i></button>
-                </div>
+          <div class="cp-panel">
+            <span class="cp-panel-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <h2>Download the Company Profile</h2>
+           
+            <form action="forms/company-profile.php" method="post" class="cp-form php-email-form">
+              <div class="cp-field">
+                <label for="cp-name">Full Name</label>
+                <input type="text" id="cp-name" name="name" placeholder="Your full name" required>
               </div>
+              <div class="cp-field">
+                <label for="cp-email">Work Email</label>
+                <input type="email" id="cp-email" name="email" placeholder="you@company.com" required>
+              </div>
+              <div class="cp-field">
+                <label for="cp-company">Company Name</label>
+                <input type="text" id="cp-company" name="company" placeholder="Your company" required>
+              </div>
+              <div class="cp-field">
+                <label for="cp-phone">Phone Number</label>
+                <input type="tel" id="cp-phone" name="phone" placeholder="Optional">
+              </div>
+              <button type="submit">Download PDF <i class="bi bi-download"></i></button>
               <div class="loading">Loading</div>
               <div class="error-message"></div>
               <div class="sent-message">Thank you! Your download will begin shortly.</div>
