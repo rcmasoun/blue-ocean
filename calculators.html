@@ -128,9 +128,7 @@
 
   <div class="calc-nav"><div class="container">
     <a href="#jominy" class="on">Jominy Hardenability</a>
-    <a href="#reduction-ratio">Reduction Ratio</a>
-    <a href="#weight">Weight</a>
-    <a href="#converter">1/16″ to mm</a>
+  <a href="#converter">1/16″ to mm</a>
   </div></div>
 
   <!-- 1. JOMINY -->
@@ -186,83 +184,7 @@
     </div>
   </div></section>
 
-  <!-- 2. REDUCTION -->
-  <section class="calc-sec" id="reduction-ratio"><div class="container">
-    <div class="calc-head">
-      <div>
-        <span class="calc-eyebrow">Calculator 02</span>
-        <h2>Reduction Ratio Calculator</h2>
-        <p>Calculate the reduction ratio of steel billets, blooms and bars during forging or rolling operations. The steel reduction ratio calculator compares the initial and final cross-sectional areas to help engineers understand the extent of material deformation during processing.</p>
-      </div>
-      <div class="use-box"><h3>When to Use</h3><ul>
-        <li><i class="bi bi-check-circle-fill"></i>To calculate reduction ratios for steel forging and rolling operations.</li>
-        <li><i class="bi bi-check-circle-fill"></i>To evaluate dimensional changes from billets or blooms to finished steel bars.</li>
-        <li><i class="bi bi-check-circle-fill"></i>To support manufacturing planning and material quality requirements.</li>
-      </ul></div>
-    </div>
-    <div class="calc-card"><div class="calc-body">
-      <form class="calc-in" onsubmit="return false">
-        <h4>Step 1 · Enter values from which reduction is to occur</h4>
-        <div class="fgrid">
-          <div class="fld"><label for="r_w">Width (mm) *</label><div class="inp"><input id="r_w" type="number" min="0.001" step="any" value="150"><span class="u">mm</span></div></div>
-          <div class="fld"><label for="r_t">Thickness (mm) *</label><div class="inp"><input id="r_t" type="number" min="0.001" step="any" value="150"><span class="u">mm</span></div></div>
-        </div>
-        <div class="sub">Step 2 · Select final shape and enter values</div>
-        <div class="fgrid">
-          <div class="fld full"><label for="r_s">Shape *</label><select id="r_s"><option value="round">Round</option><option value="square">Square</option><option value="rect">Rectangle</option></select></div>
-          <div class="fld" id="r_f1"><label id="r_l1" for="r_a">Diameter (mm) *</label><div class="inp"><input id="r_a" type="number" min="0.001" step="any" value="60"><span class="u">mm</span></div></div>
-          <div class="fld" id="r_f2" style="display:none"><label for="r_b">Side 2 (mm) *</label><div class="inp"><input id="r_b" type="number" min="0.001" step="any" value="40"><span class="u">mm</span></div></div>
-        </div>
-        <div class="cbtn"><button type="button" class="sec" id="r_reset">Reset</button></div>
-      </form>
-      <div class="calc-out">
-        <h4>Reduction Ratio</h4>
-        <div class="hero-num"><span>Reduction ratio</span><strong><span id="r_ratio">—</span><small>: 1</small></strong><em id="r_msg"></em></div>
-        <div class="ratio-vis"><span>1:1</span><div class="bar"><i id="r_bar" style="width:0"></i></div><span>10:1+</span></div>
-        <div class="mini">
-          <div><span>Initial area</span><b id="r_A0">—<small>mm²</small></b></div>
-          <div><span>Final area</span><b id="r_A1">—<small>mm²</small></b></div>
-        </div>
-       <!-- <p class="calc-note">Ratio = initial cross-section area ÷ final cross-section area. Check your customer specification for the minimum ratio required.</p>-->
-      </div>
-    </div></div>
-  </div></section>
 
-  <!-- 3. WEIGHT -->
-  <section class="calc-sec" id="weight"><div class="container">
-    <div class="calc-head">
-      <div>
-        <span class="calc-eyebrow">Calculator 03</span>
-        <h2>Weight Calculator</h2>
-        <p>Calculate the approximate weight of steel round bars, square bars and rectangular bars using their dimensions and length. The steel weight calculator helps manufacturers, procurement teams and steel buyers estimate material quantities for purchasing, inventory planning, costing and transportation.</p>
-      </div>
-      <div class="use-box"><h3>When to Use</h3><ul>
-        <li><i class="bi bi-check-circle-fill"></i>To estimate steel bar weight before placing a purchase order.</li>
-        <li><i class="bi bi-check-circle-fill"></i>To calculate material quantities for manufacturing and production planning.</li>
-        <li><i class="bi bi-check-circle-fill"></i>To estimate steel weight for pricing, logistics and inventory management.</li>
-      </ul></div>
-    </div>
-    <div class="calc-card"><div class="calc-body">
-      <form class="calc-in" onsubmit="return false">
-        <h4>Step 1 · Select shape</h4>
-        <div class="fgrid"><div class="fld full"><label for="w_s">Shape *</label><select id="w_s"><option value="round">Round</option><option value="square">Square</option><option value="rect">Rectangle</option></select></div></div>
-        <div class="sub">Step 2 · Enter values</div>
-        <div class="fgrid">
-          <div class="fld" id="w_fa"><label id="w_la" for="w_a">Diameter (mm) *</label><div class="inp"><input id="w_a" type="number" min="0.001" step="any" value="50"><span class="u">mm</span></div></div>
-          <div class="fld" id="w_fb" style="display:none"><label for="w_b">Side 2 (mm) *</label><div class="inp"><input id="w_b" type="number" min="0.001" step="any" value="25"><span class="u">mm</span></div></div>
-          <div class="fld"><label for="w_len">Length (mm) – optional</label><div class="inp"><input id="w_len" type="number" min="0" step="any" value="6000"><span class="u">mm</span></div></div>
-        </div>
-        <div class="cbtn"><button type="button" class="sec" id="w_reset">Reset</button></div>
-        <!--<p class="calc-note lt">Weights are theoretical, based on nominal dimensions and a steel density of 7.85 g/cm³. Actual weight varies with rolling tolerances.</p>-->
-      </form>
-      <div class="calc-out">
-        <h4>Weight</h4>
-        <div class="hero-num"><span>Weight</span><strong><span id="w_pm">—</span><small>kg/metre</small></strong></div>
-        <div class="hero-num"><span>Bar weight</span><strong><span id="w_bar">—</span><small>kg</small></strong><em id="w_ton"></em></div>
-        <div class="mini"><div style="grid-column:1/-1"><span>Cross-section area</span><b id="w_area">—<small>mm²</small></b></div></div>
-      </div>
-    </div></div>
-  </div></section>
 
   <!-- 4. CONVERTER -->
   <section class="calc-sec" id="converter"><div class="container">
@@ -498,30 +420,6 @@ $('j_csv').onclick=()=>{
 };
 new ResizeObserver(jChart).observe($('j_chart'));
 
-/* ---------- Reduction ratio ---------- */
-function rCalc(){
-  shapeUI('r_s','r_l1','r_f2');const s=$('r_s').value;
-  if(!ok(['r_w','r_t','r_a'].concat(s==='rect'?['r_b']:[])))return;
-  const A0=num('r_w')*num('r_t'),A1=area(s,num('r_a'),num('r_b')),R=A0/A1;
-  $('r_ratio').textContent=fmt(R,2);
-  $('r_A0').innerHTML=fmt(A0,0)+'<small>mm²</small>';$('r_A1').innerHTML=fmt(A1,0)+'<small>mm²</small>';
-  $('r_bar').style.width=Math.max(0,Math.min(100,(R-1)/9*100))+'%';
-  $('r_msg').textContent=R<1?'Final section is larger than the initial section.':'Area reduced by '+fmt((1-A1/A0)*100,1)+'%.';
-}
-['r_w','r_t','r_s','r_a','r_b'].forEach(i=>$(i).addEventListener('input',rCalc));
-$('r_reset').onclick=()=>{$('r_w').value=150;$('r_t').value=150;$('r_s').value='round';$('r_a').value=60;$('r_b').value=40;rCalc()};
-
-/* ---------- Weight ---------- */
-function wCalc(){
-  shapeUI('w_s','w_la','w_fb');const s=$('w_s').value;
-  if(!ok(['w_a','w_len'].concat(s==='rect'?['w_b']:[])))return;
-  const A=area(s,num('w_a'),num('w_b')),pm=A*7.85/1000,bar=pm*num('w_len')/1000;
-  $('w_pm').textContent=fmt(pm,3);$('w_bar').textContent=fmt(bar,2);
-  $('w_ton').textContent=num('w_len')>0?'≈ '+fmt(bar/1000,3)+' tonnes':'Enter a length to get bar weight.';
-  $('w_area').innerHTML=fmt(A,0)+'<small>mm²</small>';
-}
-['w_s','w_a','w_b','w_len'].forEach(i=>$(i).addEventListener('input',wCalc));
-$('w_reset').onclick=()=>{$('w_s').value='round';$('w_a').value=50;$('w_b').value=25;$('w_len').value=6000;wCalc()};
 
 /* ---------- 1/16" to mm ---------- */
 function cCalc(){if(!ok(['c_n']))return;const mm=num('c_n')*25.4/16;$('c_mm').textContent=fmt(mm,3);$('c_in').textContent=fmt(num('c_n')/16,4)+' inch'}
