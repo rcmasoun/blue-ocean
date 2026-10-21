@@ -45,7 +45,7 @@
 
       </a>
 
-      <nav id="navmenu" class="navmenu">
+       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html" >Our Story</a></li>
@@ -110,6 +110,7 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
     </div>
   </header>
 
@@ -119,7 +120,7 @@
     <div class="page-title dark-background">
       <div class="container position-relative">
         <h1>Blog</h1>
-       <p>Industry insights, technical knowledge and practical guidance for smarter steel sourcing and manufacturing decisions.</p>
+        <p>Industry insights, technical knowledge and practical guidance for smarter steel sourcing and manufacturing decisions.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -133,53 +134,33 @@
     <section id="blog-posts" class="blog-posts section">
 
       <div class="container">
-        <div class="row gy-4">
+        <div class="blog-search" role="search">
+          <i class="bi bi-search" aria-hidden="true"></i>
+          <input type="search" id="blogSearch" placeholder="Search blogs by title, category or author..." aria-label="Search blogs" autocomplete="off">
+          <button type="button" class="blog-search-clear" id="blogSearchClear" aria-label="Clear search" hidden><i class="bi bi-x-lg"></i></button>
+        </div>
+        <p class="blog-search-count" id="blogCount" aria-live="polite"></p>
+        <div class="row gy-4" id="blogList">
 
           <div class="col-lg-4">
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Politics</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Maria Doe</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-4.jpg" alt="" class="img-fluid">
               </div>
 
               <p class="post-category">Sports</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                <a href="blog-details.html">Non rem rerum nam cum quo minus olor distincti</a>
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <img src="assets/img/blog/blog-author-4.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
-                  <p class="post-author">Allisa Mayer</p>
+                  <p class="post-author">Lisa Neymar</p>
                   <p class="post-date">
-                    <time datetime="2022-01-01">Jun 5, 2022</time>
+                    <time datetime="2022-01-01">Jun 30, 2022</time>
                   </p>
                 </div>
               </div>
@@ -217,21 +198,47 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/blog-4.jpg" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
               </div>
 
               <p class="post-category">Sports</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Non rem rerum nam cum quo minus olor distincti</a>
+                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-4.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
-                  <p class="post-author">Lisa Neymar</p>
+                  <p class="post-author">Allisa Mayer</p>
                   <p class="post-date">
-                    <time datetime="2022-01-01">Jun 30, 2022</time>
+                    <time datetime="2022-01-01">Jun 5, 2022</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article>
+
+              <div class="post-img">
+                <img src="assets/img/blog/blog-6.jpg" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Entertainment</p>
+
+              <h2 class="title">
+                <a href="blog-details.html">Distinctio provident quibusdam numquam aperiam aut</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="assets/img/blog/blog-author-6.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Mika Lendon</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Feb 14, 2022</time>
                   </p>
                 </div>
               </div>
@@ -269,29 +276,29 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/blog-6.jpg" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Entertainment</p>
+              <p class="post-category">Politics</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Distinctio provident quibusdam numquam aperiam aut</a>
+                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-6.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
-                  <p class="post-author">Mika Lendon</p>
+                  <p class="post-author">Maria Doe</p>
                   <p class="post-date">
-                    <time datetime="2022-01-01">Feb 14, 2022</time>
+                    <time datetime="2022-01-01">Jan 1, 2022</time>
                   </p>
                 </div>
               </div>
 
             </article>
           </div><!-- End post list item -->
-
         </div>
+        <p class="blog-empty" id="blogEmpty" hidden>No blogs found. Try a different keyword.</p>
       </div>
 
     </section><!-- /Blog Posts Section -->
@@ -466,6 +473,33 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
+  <script>
+    (function () {
+      var input = document.getElementById('blogSearch');
+      if (!input) return;
+      var clear = document.getElementById('blogSearchClear'),
+          count = document.getElementById('blogCount'),
+          empty = document.getElementById('blogEmpty'),
+          items = [].slice.call(document.querySelectorAll('#blogList > div'));
+      var total = items.length;
+      items.forEach(function (el) { el.setAttribute('data-search', el.textContent.replace(/\s+/g, ' ').toLowerCase()); });
+      function run() {
+        var q = input.value.trim().toLowerCase(), words = q ? q.split(/\s+/) : [], shown = 0;
+        items.forEach(function (el) {
+          var hay = el.getAttribute('data-search');
+          var ok = words.every(function (w) { return hay.indexOf(w) > -1; });
+          el.classList.toggle('d-none', !ok);
+          if (ok) shown++;
+        });
+        clear.hidden = !q;
+        empty.hidden = shown !== 0;
+        count.textContent = q ? shown + ' of ' + total + ' blogs found' : '';
+      }
+      input.addEventListener('input', run);
+      clear.addEventListener('click', function () { input.value = ''; run(); input.focus(); });
+    })();
+  </script>
+
   <script src="assets/js/main.js"></script>
 
 </body>
