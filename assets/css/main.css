@@ -2432,7 +2432,7 @@ section,
 }
 
 .stats-number-grid .stats-item .purecounter {
-  font-size: clamp(28px, 2.6vw, 36px);
+  font-size: clamp(28px, 2.6vw, 56px);
   letter-spacing: -0.02em;
 }
 
@@ -5217,9 +5217,15 @@ section,
 }
 
 /* ---------- Mill Partners marquee ---------- */
+.mill-partners { background: var(--heading-color); }
+ .mill-partners .section-title h2 { color: #fff; }
+ .mill-partners .section-title h2::after { background: var(--gold-color); }
+.mill-partner-badge { border: 0; border-radius: 4px; box-shadow: none; }
+.mill-partners .section-title { margin-bottom: 28px; }
 .mill-partners-swiper {
   padding: 10px 0 6px;
 }
+.mill-partners-swiper .swiper-wrapper { transition-timing-function: linear !important; }
 
 .mill-partner-badge {
   display: flex;
@@ -6931,7 +6937,55 @@ section,
 .grade-page .gr-supply .db-h2 { max-width: 24ch; }
 
 .grade-page .gr-qa { grid-template-columns: repeat(4, 1fr); margin-top: 8px; }
-.grade-page .gr-qa .db-use-media { aspect-ratio: 4 / 3; }
+/* Quality Assurance & Testing — transparent, icon-led design */
+.grade-page .gr-qa { counter-reset: qa; gap: 24px; }
+.grade-page .gr-qa .db-use {
+  counter-increment: qa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 18px 26px;
+  text-align: center;
+  background: transparent;
+  border: 1px solid var(--db-line);
+  border-top: 3px solid var(--db-blue);
+  border-radius: 8px;
+  box-shadow: none;
+  transition: transform .25s ease, border-color .25s ease;
+}
+.grade-page .gr-qa .db-use:hover { transform: translateY(-4px); border-color: var(--db-gold); }
+.grade-page .gr-qa .db-use-media {
+  width: 88px;
+  height: 88px;
+  aspect-ratio: auto;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid var(--db-blue);
+  font-size: 2.3rem;
+  color: var(--db-blue);
+  transition: color .25s ease, border-color .25s ease;
+}
+/* bolder icons: thicken the glyph strokes */
+.grade-page .gr-qa .db-use-media i { line-height: 1; -webkit-text-stroke: 1px currentColor; }
+.grade-page .gr-qa .db-use-media img { display: none; }
+.grade-page .gr-qa .db-use:hover .db-use-media { color: var(--db-gold); border-color: var(--db-gold); }
+.grade-page .gr-qa .db-use p {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 18px 0 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--db-ink);
+}
+.grade-page .gr-qa .db-use p::before {
+  content: counter(qa, decimal-leading-zero);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  color: var(--db-gold);
+}
 
 .grade-page .gr-enquiry { padding: 96px 0; background: var(--db-deeper); color: var(--db-pale); }
 .grade-page .gr-enq-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 64px; align-items: start; }
@@ -7239,4 +7293,29 @@ section,
   .ec-steps{grid-template-columns:1fr}
   .ec-journey{padding:22px 18px}.ec-journey:before{left:44px}
   .ec-btn{width:100%;justify-content:center}.ec-panel .ec-btn{align-self:stretch}
+}
+
+
+/* ---------- Nav: Login button (after Contact) ---------- */
+@media (min-width: 1200px) {
+  .navmenu li.nav-login { margin-left: 10px; }
+  .navmenu li.nav-login > a,
+  .navmenu li.nav-login > a:focus {
+    padding: 9px 26px;
+    border-radius: 999px;
+    background: var(--accent-color);
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .navmenu li.nav-login > a:hover {
+    background: var(--heading-color);
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(8, 40, 63, 0.2);
+  }
+}
+@media (max-width: 1199px) {
+  .navmenu li.nav-login > a { font-weight: 700; color: var(--accent-color); }
 }
