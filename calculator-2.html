@@ -121,80 +121,40 @@
   <main class="main">
   <div class="page-title dark-background">
     <div class="container position-relative">
-     <!-- <span class="title-eyebrow">Engineering Tools</span>-->
-      <h1>Weight</h1>
-     <!-- <p>Free calculators for hardenability, reduction ratio and bar weight — built for metallurgists, manufacturers and steel buyers.</p>-->
-      <nav class="breadcrumbs"><ol><li><a href="index.html">Home</a></li><li class="current">Weight</li></ol></nav>
+      <h1>Calculators</h1>
+      <nav class="breadcrumbs"><ol><li><a href="index.html">Home</a></li><li class="current">Calculators</li></ol></nav>
     </div>
   </div>
 
-  <div class="calc-nav"><div class="container">
-   
-    <a href="#weight">Weight</a>
-    
-  </div></div>
-
-  <!-- 3. WEIGHT -->
-  <section class="calc-sec" id="weight"><div class="container">
+  <!-- WEIGHT -->
+  <section class="calc-sec" id="weight"><div class="container"><div class="calc-wrap">
     <div class="calc-head">
-      <div>
-        <span class="calc-eyebrow">Calculator 03</span>
-        <h2>Weight Calculator</h2>
-        <p>Calculate the approximate weight of steel round bars, square bars and rectangular bars using their dimensions and length. The steel weight calculator helps manufacturers, procurement teams and steel buyers estimate material quantities for purchasing, inventory planning, costing and transportation.</p>
-      </div>
-      <div class="use-box"><h3>When to Use</h3><ul>
-        <li><i class="bi bi-check-circle-fill"></i>To estimate steel bar weight before placing a purchase order.</li>
-        <li><i class="bi bi-check-circle-fill"></i>To calculate material quantities for manufacturing and production planning.</li>
-        <li><i class="bi bi-check-circle-fill"></i>To estimate steel weight for pricing, logistics and inventory management.</li>
-      </ul></div>
+      <h2>Weight Calculator</h2>
+      <p>This calculator will provide you weight of the specialty steel based on the shape and size.</p>
     </div>
-    <div class="calc-card"><div class="calc-body">
-      <form class="calc-in" onsubmit="return false">
-        <h4>Step 1 · Select shape</h4>
-        <div class="fgrid"><div class="fld full"><label for="w_s">Shape *</label><select id="w_s"><option value="round">Round</option><option value="square">Square</option><option value="rect">Rectangle</option></select></div></div>
-        <div class="sub">Step 2 · Enter values</div>
-        <div class="fgrid">
-          <div class="fld" id="w_fa"><label id="w_la" for="w_a">Diameter (mm) *</label><div class="inp"><input id="w_a" type="number" min="0.001" step="any" value="50"><span class="u">mm</span></div></div>
-          <div class="fld" id="w_fb" style="display:none"><label for="w_b">Side 2 (mm) *</label><div class="inp"><input id="w_b" type="number" min="0.001" step="any" value="25"><span class="u">mm</span></div></div>
-          <div class="fld"><label for="w_len">Length (mm) – optional</label><div class="inp"><input id="w_len" type="number" min="0" step="any" value="6000"><span class="u">mm</span></div></div>
+    <div class="calc-card">
+      <form class="calc-in" onsubmit="return false" novalidate>
+        <div class="calc-step">
+          <div class="calc-step-top"><span class="calc-step-n">Step 1</span><h3>Select shape</h3></div>
+          <div class="fgrid">
+            <div class="fld full"><label for="w_s">Shape *</label><select id="w_s"><option value="round">Round</option><option value="square">Square</option><option value="rect">Rectangle</option></select></div>
+          </div>
         </div>
-        <div class="cbtn"><button type="button" class="sec" id="w_reset">Reset</button></div>
-        <!--<p class="calc-note lt">Weights are theoretical, based on nominal dimensions and a steel density of 7.85 g/cm³. Actual weight varies with rolling tolerances.</p>-->
+        <div class="calc-step">
+          <div class="calc-step-top"><span class="calc-step-n">Step 2</span><h3>Enter values</h3></div>
+          <div class="fgrid">
+            <div class="fld" id="w_fa"><label id="w_la" for="w_a">Diameter (mm) *</label><div class="inp"><input id="w_a" type="number" min="0.001" step="any" value="50"><span class="u">mm</span></div></div>
+            <div class="fld" id="w_fb" style="display:none"><label for="w_b">Side 2 (mm) *</label><div class="inp"><input id="w_b" type="number" min="0.001" step="any" value="25"><span class="u">mm</span></div></div>
+            <div class="fld full"><label for="w_len">Length (mm) - optional</label><div class="inp"><input id="w_len" type="number" min="0" step="any" value="6000"><span class="u">mm</span></div></div>
+          </div>
+        </div>
       </form>
-      <div class="calc-out">
-        <h4>Weight</h4>
-        <div class="hero-num"><span>Weight</span><strong><span id="w_pm">—</span><small>kg/metre</small></strong></div>
-        <div class="hero-num"><span>Bar weight</span><strong><span id="w_bar">—</span><small>kg</small></strong><em id="w_ton"></em></div>
-        <div class="mini"><div style="grid-column:1/-1"><span>Cross-section area</span><b id="w_area">—<small>mm²</small></b></div></div>
+      <div class="calc-out" aria-live="polite">
+        <div class="stat"><span>Weight</span><strong><span id="w_pm" style="all:unset">0.00</span><small>kg/metre</small></strong></div>
+        <div class="stat"><span>Bar Weight</span><strong><span id="w_bar" style="all:unset">0.00</span><small>kg</small></strong></div>
       </div>
-    </div></div>
-  </div></section>
-
-  <!-- 4. CONVERTER 
-  <section class="calc-sec" id="converter"><div class="container">
-    <div class="calc-head one">
-      <div>
-        <span class="calc-eyebrow">Utility</span>
-        <h2>Convert 1/16″ to mm</h2>
-       </div>
     </div>
-    <div class="calc-card" style="max-width:720px"><div class="calc-body">
-      <form class="calc-in" onsubmit="return false">
-        <h4>Enter value</h4>
-        <div class="fgrid"><div class="fld full"><label for="c_n">1/16″ *</label><div class="inp"><input id="c_n" type="number" min="0" step="any" value="1"><span class="u">× 1/16″</span></div></div></div>
-      </form>
-      <div class="calc-out">
-        <h4>Millimetre</h4>
-        <div class="hero-num"><span>Millimetre</span><strong><span id="c_mm">—</span><small>mm</small></strong><em id="c_in"></em></div>
-      </div>
-    </div></div>
-  </div></section>
-
- <!-- <section class="cta"><div class="container">
-    <h2>Need a quote or material test certificates?</h2>
-    <p>Talk to our team about special steel grades, sizes and supply.</p>
-    <a href="contact.html">Contact Blue Ocean Steels</a>
-  </div></section>-->
+  </div></div></section>
 </main>
 
   <footer id="footer" class="footer dark-background modern-footer">
@@ -351,35 +311,27 @@
   
 <script>
 (function(){
-const $=id=>document.getElementById(id), num=id=>parseFloat($(id).value);
+const $=id=>document.getElementById(id),num=id=>parseFloat($(id).value);
 const fmt=(v,d=2)=>v.toLocaleString('en-IN',{minimumFractionDigits:d,maximumFractionDigits:d});
 function ok(ids){let good=true;ids.forEach(id=>{const e=$(id),v=parseFloat(e.value),bad=!isFinite(v)||v<(+e.min||0)||(e.max!==''&&v>+e.max);e.closest('.fld').classList.toggle('bad',bad);if(bad)good=false});return good}
 const area=(s,a,b)=>s==='round'?Math.PI*a*a/4:s==='square'?a*a:a*b;
-function shapeUI(sel,labA,boxB,lblB){const s=$(sel).value;
+function shapeUI(sel,labA,boxB){const s=$(sel).value;
   $(labA).textContent=s==='round'?'Diameter (mm) *':s==='square'?'Side (mm) *':'Side 1 (mm) *';
   $(boxB).style.display=s==='rect'?'':'none'}
 
 /* ---------- Weight ---------- */
 function wCalc(){
   shapeUI('w_s','w_la','w_fb');const s=$('w_s').value;
-  if(!ok(['w_a','w_len'].concat(s==='rect'?['w_b']:[])))return;
-  const A=area(s,num('w_a'),num('w_b')),pm=A*7.85/1000,bar=pm*num('w_len')/1000;
-  $('w_pm').textContent=fmt(pm,3);$('w_bar').textContent=fmt(bar,2);
-  $('w_ton').textContent=num('w_len')>0?'≈ '+fmt(bar/1000,3)+' tonnes':'Enter a length to get bar weight.';
-  $('w_area').innerHTML=fmt(A,0)+'<small>mm²</small>';
+  const L=$('w_len'),blank=L.value.trim()==='';
+  let lenOk=true;
+  if(blank)L.closest('.fld').classList.remove('bad');else lenOk=ok(['w_len']);
+  const good=ok(['w_a'].concat(s==='rect'?['w_b']:[]));
+  if(!good||!lenOk){$('w_pm').textContent='0.00';$('w_bar').textContent='0.00';return}
+  const pm=area(s,num('w_a'),num('w_b'))*7.85/1000,bar=blank?0:pm*num('w_len')/1000;
+  $('w_pm').textContent=fmt(pm,2);$('w_bar').textContent=fmt(bar,2);
 }
 ['w_s','w_a','w_b','w_len'].forEach(i=>$(i).addEventListener('input',wCalc));
-$('w_reset').onclick=()=>{$('w_s').value='round';$('w_a').value=50;$('w_b').value=25;$('w_len').value=6000;wCalc()};
-
-/* ---------- 1/16" to mm ---------- */
-function cCalc(){if(!ok(['c_n']))return;const mm=num('c_n')*25.4/16;$('c_mm').textContent=fmt(mm,3);$('c_in').textContent=fmt(num('c_n')/16,4)+' inch'}
-$('c_n').addEventListener('input',cCalc);
-
-/* ---------- sticky nav highlight ---------- */
-const links=[...document.querySelectorAll('.calc-nav a')];
-const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id))),{rootMargin:'-35% 0px -55% 0px'});
-document.querySelectorAll('.calc-sec').forEach(s=>io.observe(s));
-jCalc();rCalc();wCalc();cCalc();
+wCalc();
 })();
 </script>
 
