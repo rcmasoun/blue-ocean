@@ -1026,7 +1026,7 @@ h6 {
 }
 
 @media (max-width: 767px) {
-  .contact-overlap { padding: 0 0 200px; }
+  .contact-overlap { padding: 0 0 90px; }
   .contact-visual { position: relative; top: 0; left: 0; width: 100%; height: 220px; margin-bottom: -80px; }
   .contact-panel { padding: 38px 24px; }
   .contact-intro h2 {
@@ -6640,7 +6640,7 @@ section,
 }
 
 .hero .hero-points li + li {
-  border-left: 2px solid rgba(244, 224, 44, 0.6);
+  border-right: 2px solid rgba(244, 224, 44, 0.6);
 }
 
 @media (max-width: 768px) {
@@ -7408,8 +7408,8 @@ video {
 
   .container,
   .container-fluid {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .section,
@@ -7554,5 +7554,238 @@ video {
 
   .hero .hero-trust-line {
     font-size: 12px;
+  }
+}
+
+/* Compact mobile layout across every page. These rules intentionally live last
+   so page-specific desktop spacing cannot leave oversized gaps on phones. */
+@media (max-width: 767px) {
+  body main > section,
+  body main > .section,
+  body main > .calc-sec,
+  body main > .pp-sec {
+    padding-top: 34px !important;
+    padding-bottom: 34px !important;
+  }
+
+  body main .container,
+  body main .container-fluid {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  body main .section-title {
+    margin: 0 auto 20px !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  body main .section-title h2 {
+    margin-bottom: 8px;
+    font-size: clamp(24px, 6.5vw, 32px);
+    line-height: 1.2;
+  }
+
+  body main .section-title p,
+  body main p {
+    margin-bottom: 14px;
+    line-height: 1.6;
+  }
+
+  body main .page-title,
+  body main .about-page .page-title,
+  body main .product-page .page-title,
+  body main .round-black-bars-page .page-title {
+    min-height: 0 !important;
+    padding: 92px 0 30px !important;
+  }
+
+  body main .page-title h1 {
+    margin-bottom: 10px;
+    font-size: clamp(28px, 8vw, 40px);
+    line-height: 1.1;
+  }
+
+  body main .page-title p {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  body main .breadcrumbs {
+    margin-top: 8px;
+  }
+
+  body main .hero {
+    min-height: 68svh;
+    padding-top: 88px;
+    padding-bottom: 28px;
+  }
+
+  body main .hero .hero-content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  body main .hero h1 {
+    margin-bottom: 14px;
+    font-size: clamp(32px, 9vw, 46px);
+  }
+
+  body main .hero .hero-bottom-content,
+  body main .hero .hero-trust-line {
+    margin-bottom: 12px;
+  }
+
+  body main .features .feature-tab-buttons {
+    padding: 6px;
+    gap: 4px;
+  }
+
+  body main .features .feature-tab-buttons .nav-link {
+    padding: 10px 7px;
+    font-size: 13px;
+  }
+
+  body main .features .feature-tab-content,
+  body main .calc-in,
+  body main .calc-out,
+  body main .jtable,
+  body main .ec-panel,
+  body main .ec-cap,
+  body main .gr-form,
+  body main .db-grade,
+  body main .adv-panel-body {
+    padding: 18px !important;
+  }
+
+  body main .calc-head {
+    margin-bottom: 18px;
+  }
+
+  body main .calc-card {
+    border-radius: 14px;
+  }
+
+  body main .calc-in {
+    gap: 18px;
+  }
+
+  body main .jtwo,
+  body main .stats-glance-grid,
+  body main .ec-intro-grid,
+  body main .ec-aud-grid,
+  body main .gr-spec,
+  body main .gr-mech,
+  body main .gr-supply,
+  body main .gr-enq-grid,
+  body main .drawn-bar-page .db-intro-grid,
+  body main .drawn-bar-page .db-adv,
+  body main .value-mission .vm-diagonal {
+    gap: 18px;
+  }
+
+  body main .stats-glance-copy > p,
+  body main .gr-lede-dark,
+  body main .gr-avail,
+  body main .drawn-bar-page .db-outcomes,
+  body main .drawn-bar-page .db-steps,
+  body main .drawn-bar-page .db-uses,
+  body main .drawn-bar-page .db-explore {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  body main .stats-glance-map {
+    min-height: 190px;
+  }
+
+  body main .stats-glance-map .world-map-svg {
+    padding: 18px 12px;
+  }
+
+  body main .stats-number-grid {
+    column-gap: 18px;
+    row-gap: 18px;
+  }
+
+  body main .adv-hex-grid,
+  body main .grade-page .gr-apps,
+  body main .grade-page .gr-qa,
+  body main .round-black-bars-page .use-case-grid.compact,
+  body main .special-products .row {
+    gap: 14px;
+  }
+
+  body main .special-products .row {
+    grid-template-columns: 1fr;
+  }
+
+  body main .special-products .row > .col-lg-4:first-child article {
+    display: block;
+    min-height: 0;
+  }
+
+  body .footer .footer-top,
+  body .footer .modern-footer-content,
+  body .footer .reference-footer-main,
+  body .footer .reference-footer-extra {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  body .footer h4,
+  body .footer h5 {
+    margin-bottom: 10px;
+  }
+
+  body .footer .row {
+    --bs-gutter-y: 1rem;
+  }
+
+  body .modern-footer-bottom,
+  body .reference-footer-copyright {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  body main .row > [class*="col-"] {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  body main > section,
+  body main > .section,
+  body main > .calc-sec,
+  body main > .pp-sec {
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+  }
+
+  body main .container,
+  body main .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  body main .features .feature-tab-content,
+  body main .calc-in,
+  body main .calc-out,
+  body main .jtable,
+  body main .ec-panel,
+  body main .ec-cap,
+  body main .gr-form,
+  body main .db-grade,
+  body main .adv-panel-body {
+    padding: 15px !important;
+  }
+
+  body main .hero {
+    min-height: 62svh;
+  }
+
+  body main .page-title {
+    padding-top: 84px !important;
+    padding-bottom: 24px !important;
   }
 }
