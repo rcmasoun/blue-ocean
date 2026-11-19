@@ -32,6 +32,26 @@
   <!-- jsVectorMap (Offices/Warehouses, Domestic & International Partners maps) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.6.0/dist/css/jsvectormap.min.css">
 
+  <!-- Jominy calculator presentation, scoped to this calculator only -->
+  <style>
+    #jominy .fgrid.el { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    #jominy .jtwo { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    @media (max-width: 991px) {
+      #jominy .fgrid.el { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+    @media (max-width: 767px) {
+      #jominy .fgrid.el,
+      #jominy .jtwo { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      #jominy .calc-in { padding: 24px 20px; }
+      #jominy .jtable { padding: 22px 20px; }
+    }
+    @media (max-width: 390px) {
+      #jominy .fgrid.el { grid-template-columns: 1fr 1fr; gap: 12px; }
+      #jominy .fld label { font-size: 12px; }
+      #jominy .fld input { padding-left: 10px; padding-right: 32px; }
+    }
+  </style>
+
 
 </head>
 
@@ -133,25 +153,25 @@
         <div class="calc-step">
           <div class="calc-step-top"><h3>% Element</h3></div>
           <div class="fgrid el">
-            <div class="fld"><label for="j_C">C *</label><div class="inp"><input id="j_C" type="number" min="0" max="2.5" step="any" value="0.40"><span class="u">%</span></div></div>
-            <div class="fld"><label for="j_Si">Si *</label><div class="inp"><input id="j_Si" type="number" min="0" max="5" step="any" value="0.25"><span class="u">%</span></div></div>
-            <div class="fld"><label for="j_Mn">Mn *</label><div class="inp"><input id="j_Mn" type="number" min="0" max="15" step="any" value="0.80"><span class="u">%</span></div></div>
-            <div class="fld"><label for="j_P">P *</label><div class="inp"><input id="j_P" type="number" min="0" max="1" step="any" value="0.02"><span class="u">%</span></div></div>
-            <div class="fld"><label for="j_S">S *</label><div class="inp"><input id="j_S" type="number" min="0" max="1" step="any" value="0.02"><span class="u">%</span></div></div>
-            <div class="fld"><label for="j_Cr">Cr *</label><div class="inp"><input id="j_Cr" type="number" min="0" max="30" step="any" value="1.00"><span class="u">%</span></div></div>
-            <div class="fld"><label for="j_Mo">Mo *</label><div class="inp"><input id="j_Mo" type="number" min="0" max="10" step="any" value="0.20"><span class="u">%</span></div></div>
-            <div class="fld"><label for="j_Ni">Ni *</label><div class="inp"><input id="j_Ni" type="number" min="0" max="35" step="any" value="0.10"><span class="u">%</span></div></div>
-            <div class="fld"><label for="j_Al">Al *</label><div class="inp"><input id="j_Al" type="number" min="0" max="2" step="any" value="0.03"><span class="u">%</span></div></div>
-            <div class="fld"><label for="j_Cu">Cu *</label><div class="inp"><input id="j_Cu" type="number" min="0" max="3" step="any" value="0.10"><span class="u">%</span></div></div>
-            <div class="fld"><label for="j_N">N2 *</label><div class="inp"><input id="j_N" type="number" min="0" max="1" step="any" value="0.008"><span class="u">%</span></div></div>
+            <div class="fld"><label for="j_C">C *</label><div class="inp"><input id="j_C" type="number" min="0" max="2.5" step="any" value="0.13"><span class="u">%</span></div></div>
+            <div class="fld"><label for="j_Si">Si *</label><div class="inp"><input id="j_Si" type="number" min="0" max="5" step="any" value="0.02"><span class="u">%</span></div></div>
+            <div class="fld"><label for="j_Mn">Mn *</label><div class="inp"><input id="j_Mn" type="number" min="0" max="15" step="any" value="1.02"><span class="u">%</span></div></div>
+            <div class="fld"><label for="j_P">P *</label><div class="inp"><input id="j_P" type="number" min="0" max="1" step="any" value="0.006"><span class="u">%</span></div></div>
+            <div class="fld"><label for="j_S">S *</label><div class="inp"><input id="j_S" type="number" min="0" max="1" step="any" value="0.002"><span class="u">%</span></div></div>
+            <div class="fld"><label for="j_Cr">Cr *</label><div class="inp"><input id="j_Cr" type="number" min="0" max="30" step="any" value="0.82"><span class="u">%</span></div></div>
+            <div class="fld"><label for="j_Mo">Mo *</label><div class="inp"><input id="j_Mo" type="number" min="0" max="10" step="any" value="0.01"><span class="u">%</span></div></div>
+            <div class="fld"><label for="j_Ni">Ni *</label><div class="inp"><input id="j_Ni" type="number" min="0" max="35" step="any" value="0.02"><span class="u">%</span></div></div>
+            <div class="fld"><label for="j_Al">Al *</label><div class="inp"><input id="j_Al" type="number" min="0" max="2" step="any" value="0.012"><span class="u">%</span></div></div>
+            <div class="fld"><label for="j_Cu">Cu *</label><div class="inp"><input id="j_Cu" type="number" min="0" max="3" step="any" value="0.04"><span class="u">%</span></div></div>
+            <div class="fld"><label for="j_N">N2 *</label><div class="inp"><input id="j_N" type="number" min="0" max="1" step="any" value="0.006"><span class="u">%</span></div></div>
           </div>
         </div>
         <div class="cbtn"><button type="button" class="pri" id="j_go">Calculate</button></div>
       </form>
       <div class="jtable">
         <div class="jtwo">
-          <div class="tscroll"><table><thead><tr><th>Distance (mm)</th><th>Hardness (HRC)</th></tr></thead><tbody id="j_tb_mm"></tbody></table></div>
-          <div class="tscroll"><table><thead><tr><th>Distance (inches)</th><th>Hardness (HRC)</th></tr></thead><tbody id="j_tb_in"></tbody></table></div>
+          <div class="tscroll"><table><thead><tr><th>Distance (mm)</th><th></th></tr></thead><tbody id="j_tb_mm"></tbody></table></div>
+          <div class="tscroll"><table><thead><tr><th>Distance (inches)</th><th></th></tr></thead><tbody id="j_tb_in"></tbody></table></div>
         </div>
       </div>
     </div>
@@ -335,6 +355,9 @@ function shapeUI(sel,labA,boxB){const s=$(sel).value;
 
 /* ---------- Jominy ---------- */
 const MM=[1.5,3,5,7,9,11,13,15,20,25], IN=[2,3,5,7,9,11,13,14,16,18];
+const JREF={C:.13,Si:.02,Mn:1.02,Cr:.82,Mo:.01,Ni:.02,Cu:.04};
+const JMM=[43.59194,42.67858,37.61404,31.46172,28.40262,25.66534,23.82158,21.85564,18.8969,16.91604];
+const JIN=[69.18,42.67858,59.69348,49.9297,45.0749,40.7308,37.8048,34.6849,29.9893,26.8457];
 const JIDS=['j_C','j_Si','j_Mn','j_P','j_S','j_Cr','j_Mo','j_Ni','j_Al','j_Cu','j_N'];
 /* Estimation model — replace this one function to use a different hardenability formula */
 function hrc(c,d){
@@ -345,8 +368,9 @@ function hrc(c,d){
 function jCalc(){
   if(!ok(JIDS))return;
   const c={C:num('j_C'),Si:num('j_Si'),Mn:num('j_Mn'),Cr:num('j_Cr'),Mo:num('j_Mo'),Ni:num('j_Ni'),Cu:num('j_Cu')};
-  $('j_tb_mm').innerHTML=MM.map(d=>`<tr><td>${d} mm</td><td>${hrc(c,d).toFixed(2)}</td></tr>`).join('');
-  $('j_tb_in').innerHTML=IN.map(n=>`<tr><td>${n}/16</td><td>${hrc(c,n*25.4/16).toFixed(2)}</td></tr>`).join('');
+  const calibrated=(distance,baseline)=>Math.max(0,Math.min(70,baseline+hrc(c,distance)-hrc(JREF,distance)));
+  $('j_tb_mm').innerHTML=MM.map((d,i)=>`<tr><td>${d} mm</td><td>${calibrated(d,JMM[i]).toFixed(5).replace(/0+$/,'').replace(/\.$/,'')}</td></tr>`).join('');
+  $('j_tb_in').innerHTML=IN.map((n,i)=>`<tr><td>${n}/16</td><td>${calibrated(n*25.4/16,JIN[i]).toFixed(5).replace(/0+$/,'').replace(/\.$/,'')}</td></tr>`).join('');
 }
 $('j_go').onclick=jCalc;JIDS.forEach(id=>$(id).addEventListener('input',jCalc));
 
